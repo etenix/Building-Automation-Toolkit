@@ -1,0 +1,38 @@
+# --- Python 一時ファイル ---
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+build/
+dist/
+
+# --- Qt / PySide6 関連 ---
+# UIデザイナーの一時ファイルやコンパイル済みUI
+*.pyc
+ui_*.py
+*.autosave
+
+# --- AI モデル & ウェイト ---
+# 外壁タイル識別用の学習済みモデル (大容量のため除外)
+*.pt
+*.pth
+/weights/*.pt
+
+# --- 解析結果 & レポート ---
+# 自動生成された数量算出Excelや画像
+/output/
+*.xlsx
+*.csv
+/data/processed/
+
+# --- CAD 連携一時ファイル ---
+*.bak
+*.log
+*.dwl
+*.dwl2
+
+# --- OS & エディタ ---
+.DS_Store
+.vscode/
+.idea/
