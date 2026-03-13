@@ -1,0 +1,2 @@
+# Building-Automation-Toolkit
+OpenCVによる画像補正とYOLOv5によるタイル識別を統合し、建築外壁の数量算出を自動化するデスクトップGUIツール。設計支援業務のDX化を目的とした実装。
