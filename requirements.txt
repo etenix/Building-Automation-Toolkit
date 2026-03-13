@@ -1,0 +1,27 @@
+# --- GUI Framework ---
+# 現場担当者向けのデスクトップアプリ構築に使用
+PySide6>=6.4.0
+
+# --- AI & Deep Learning ---
+# 外壁タイルの自動識別（YOLOv5）に使用
+torch>=2.0.0
+torchvision>=0.15.0
+
+# --- Image Processing ---
+# 透視変換、パース補正、目地強調などの前処理に使用
+opencv-python>=4.7.0
+numpy>=1.24.0
+
+# --- Data Export & Management ---
+# 解析結果を数量算出レポート（Excel）として出力
+pandas>=2.0.0
+openpyxl>=3.1.0
+
+# --- CAD/BIM Integration (Optional) ---
+# 設計データ（AutoCAD/Revit）との属性情報連携に使用
+ezdxf>=1.1.0
+
+# --- Utility ---
+# 処理の進捗表示やログ管理
+tqdm
+PyYAML>=5.3.1
