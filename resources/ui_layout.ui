@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1024</width>
+    <height>768</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Building Automation DX Tool - 外壁解析システム</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout_main">
+    
+    <layout class="QHBoxLayout" name="horizontalLayout_header">
+     <widget class="QLabel" name="label_title">
+      <property name="text">
+       <string>外壁タイル数量算出・AI解析ツール</string>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>16</pointsize>
+        <bold>true</bold>
+       </font>
+      </property>
+     </widget>
+    </layout>
+
+    <widget class="line" name="line_separator">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+
+    <layout class="QHBoxLayout" name="horizontalLayout_content">
+     
+     <widget class="QGraphicsView" name="graphicsView_preview">
+      <property name="minimumSize">
+       <size>
+        <width>640</width>
+        <height>480</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: #2b2b2b;</string>
+      </property>
+     </widget>
+
+     <layout class="QVBoxLayout" name="verticalLayout_controls">
+      <widget class="QGroupBox" name="groupBox_actions">
+       <property name="title">
+        <string>操作パネル</string>
+       </property>
+       <layout class="QVBoxLayout" name="verticalLayout_buttons">
+        <widget class="QPushButton" name="btn_open_image">
+         <property name="text">
+          <string>画像を開く</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="btn_run_analysis">
+         <property name="text">
+          <string>AI解析実行</string>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: #0078d4; color: white;</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="btn_export_excel">
+         <property name="text">
+          <string>Excel出力</string>
+         </property>
+        </widget>
+       </layout>
+      </widget>
+
+      <widget class="QTextEdit" name="textEdit_results">
+       <property name="readOnly">
+        <bool>true</bool>
+       </property>
+       <property name="placeholderText">
+        <string>解析結果がここに表示されます...</string>
+       </property>
+      </widget>
+     </layout>
+    </layout>
+    
+   </layout>
+  </widget>
+  
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
